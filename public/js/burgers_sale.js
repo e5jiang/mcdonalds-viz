@@ -1,31 +1,34 @@
-Highcharts.chart('container', {
+Highcharts.chart('burger_line', {
     chart: {
         type: 'line'
     },
     title: {
-        text: 'Full Time Male Student Enrollment per Year'
+        text: 'Monthly Hamburger Sales by Region in 2016'
     },
 
     data: {
         csvURL: 'https://raw.githubusercontent.com/e5jiang/mcdonalds-viz/master/data_files/hamburger.csv',
-        endColumn: 1,
         endRow: 12,
         beforeParse: function(csv) {
-            return csv.replace(/\b([a-zA-Z]{3})([\W\D\S]\d{2})\b/g, "$1-01$2");
+            return csv.replace(/\b(\d{2}[\W\D\S])([a-zA-Z]{3})\b/g, "01-$1$2");
         },
         parseDate: Date.parse
     },
-
+    tooltip: {
+        xDateFormat: "%b-%y"
+    },
     yAxis: {
         title: {
-            text: 'McDonalds'
+            text: 'Hamburgers Sold'
         }
     },
     xAxis: {
         type: 'datetime',
         labels: {
             format: '{value: %b-%y}',
-        }
+            rotation: -20
+        },
+        tickInterval: 1000 * 3600 * 24 *30
     },
 
     series: [{
