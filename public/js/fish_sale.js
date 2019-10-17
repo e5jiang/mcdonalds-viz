@@ -1,9 +1,9 @@
-Highcharts.chart('chicken_line', {
+Highcharts.chart('fish_line', {
     chart: {
         type: 'line'
     },
     title: {
-        text: 'Monthly Chicken Fillet Sales by Region in 2016'
+        text: 'Monthly Fish Fillet Sales by Region in 2016'
     },
 
     data: {
@@ -19,7 +19,7 @@ Highcharts.chart('chicken_line', {
     },
     yAxis: {
         title: {
-            text: 'Chicken Fillets Sold'
+            text: 'Fish Fillets Sold'
         }
     },
     xAxis: {
