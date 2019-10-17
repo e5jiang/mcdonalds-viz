@@ -7,7 +7,7 @@ Highcharts.chart('container', {
     },
 
     data: {
-        csvURL: 'https://raw.githubusercontent.com/e5jiang/mcdonalds-viz/master/monthly_sales.csv',
+        csvURL: 'https://raw.githubusercontent.com/e5jiang/mcdonalds-viz/master/data_files/hamburger.csv',
         endColumn: 1,
         endRow: 12,
         beforeParse: function(csv) {
