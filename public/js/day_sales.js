@@ -5,23 +5,16 @@ Highcharts.chart('column_day', {
     title: {
         text: 'Cumulative Hamburger Sales for Each Day of Week Jan 2016'
     },
-    subtitle: {
-        text: 'Source: WorldClimate.com'
+    
+    data: {
+        csvURL: 'https://raw.githubusercontent.com/e5jiang/mcdonalds-viz/master/data_files/chicken.csv'
     },
     
     yAxis: {
         min: 0,
         title: {
-            text: 'Rainfall (mm)'
+            text: 'Hamburger Sales'
         }
-    },
-    tooltip: {
-        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-        footerFormat: '</table>',
-        shared: true,
-        useHTML: true
     },
     plotOptions: {
         column: {
