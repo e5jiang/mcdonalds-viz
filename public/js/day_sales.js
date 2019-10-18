@@ -7,11 +7,10 @@ Highcharts.chart('column_day', {
     },
     
     data: {
-        csvURL: 'https://raw.githubusercontent.com/e5jiang/mcdonalds-viz/master/data_files/chicken.csv'
+        csvURL: 'https://raw.githubusercontent.com/e5jiang/mcdonalds-viz/master/data_files/burgers_dow.csv'
     },
-    
+
     yAxis: {
-        min: 0,
         title: {
             text: 'Hamburger Sales'
         }
