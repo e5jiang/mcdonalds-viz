@@ -3,12 +3,11 @@ Highcharts.chart('fish_line', {
         type: 'line'
     },
     title: {
-        text: 'Monthly Fish Fillet Sales by Region in 2016'
+        text: 'Monthly Fish Fillet Sales by Region from 2016-2019'
     },
 
     data: {
-        csvURL: 'https://raw.githubusercontent.com/e5jiang/mcdonalds-viz/master/data_files/chicken.csv',
-        endRow: 12,
+        csvURL: 'https://raw.githubusercontent.com/e5jiang/mcdonalds-viz/master/data_files/fish.csv',
         beforeParse: function(csv) {
             return csv.replace(/\b(\d{2}[\W\D\S])([a-zA-Z]{3})\b/g, "01-$1$2");
         },

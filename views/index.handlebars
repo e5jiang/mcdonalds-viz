@@ -1,31 +1,21 @@
 <html>
-    <style>
-        #container {
-        min-width: 310px;
-        max-width: 800px;
-        height: 400px;
-        margin: 0 auto
-    }
-    </style>
 
     <body>
 
-        <!-- Let's see the chart here-->
-        <div style="width: 100%; overflow: hidden;">
-            <div id="burger_line" style="width: 44%; float: left; margin-right: 2%"></div>
-            <div id="chicken_line" style="margin-left: 50%; margin-right: 2%"></div>
-
+        <div>
+            <h1 style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; margin-left: 3%">Monthly Sale Numbers</h1>
+            <div id="burger_line" style="width: 50%"></div>
+            <div id="chicken_line" style="width: 50%"></div>
+            <div id="fish_line" style="width: 50%"></div>
         </div>
 
-        <!-- External imports begin -->
         <script src="https://code.highcharts.com/highcharts.js"></script>
         <script src="https://code.highcharts.com/modules/data.js"></script>
         <script src="https://code.highcharts.com/modules/exporting.js"></script>
-        <!-- External imports end -->
-
-        <!-- Internal imports begin -->
+       
         <script src="js/burgers_sale.js"></script>
         <script src="js/chicken_sale.js"></script>
-        <!-- Internal imports end -->
+        <script src="js/fish_sale.js"></script>
+
     </body>
 </html>

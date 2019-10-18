@@ -3,12 +3,11 @@ Highcharts.chart('burger_line', {
         type: 'line'
     },
     title: {
-        text: 'Monthly Hamburger Sales by Region in 2016'
+        text: 'Monthly Hamburger Sales by Region from 2016-2019'
     },
 
     data: {
         csvURL: 'https://raw.githubusercontent.com/e5jiang/mcdonalds-viz/master/data_files/hamburger.csv',
-        endRow: 12,
         beforeParse: function(csv) {
             return csv.replace(/\b(\d{2}[\W\D\S])([a-zA-Z]{3})\b/g, "01-$1$2");
         },
