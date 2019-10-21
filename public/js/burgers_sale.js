@@ -1,4 +1,4 @@
-Highcharts.chart('burger_line', {
+var burger_line = Highcharts.chart('burger_line', {
     chart: {
         type: 'line'
     },

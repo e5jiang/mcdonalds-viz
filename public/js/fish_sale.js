@@ -1,4 +1,4 @@
-Highcharts.chart('fish_line', {
+var fish_line = Highcharts.chart('fish_line', {
     chart: {
         type: 'line'
     },

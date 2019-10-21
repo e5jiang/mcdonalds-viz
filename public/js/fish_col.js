@@ -1,4 +1,4 @@
-Highcharts.chart('column_fish', {
+var column_fish = Highcharts.chart('column_fish', {
     chart: {
         type: 'column'
     },

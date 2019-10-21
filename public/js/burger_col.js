@@ -1,4 +1,4 @@
-Highcharts.chart('column_burger', {
+var column_burger = Highcharts.chart('column_burger', {
     chart: {
         type: 'column'
     },

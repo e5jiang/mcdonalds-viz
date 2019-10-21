@@ -2,6 +2,9 @@
 
     <body>
         <div style="width: 100%;">
+            <div align='right'>
+                <button id="export-pdf">Export to PDF</button>
+            </div>
             <div style="float: left; width: 50%;">
                 <h1 style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; margin-left: 3%">Monthly Sale Numbers</h1>
                 <div id="burger_line" style="width: 100%; padding-bottom: 6%" ></div>
@@ -9,13 +12,14 @@
                 <div id="fish_line" style="width: 100%; padding-bottom: 6%"></div>
             </div>
             <div style="float: left; width: 50%;">
-                 <h1 style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; margin-left: 3%">Sales Over Days of Week (Jan 2016, Nationwide)</h1>
+                 <h1 style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; margin-left: 3%; font-size: 27">Sales Over Days of Week (Jan 2016, Nationwide)</h1>
                 <div id="column_burger" style="width: 100%; padding-bottom: 6%"></div>
                 <div id="column_chicken" style="width: 100%; padding-bottom: 6%"></div>
                 <div id="column_fish" style="width: 100%; padding-bottom: 6%"></div>
             </div>
         </div>
 
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="https://code.highcharts.com/highcharts.js"></script>
         <script src="https://code.highcharts.com/modules/data.js"></script>
         <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -26,5 +30,6 @@
         <script src="js/burger_col.js"></script>
         <script src="js/chicken_col.js"></script>
         <script src="js/fish_col.js"></script>
+        <script src="js/download.js"></script>
     </body>
 </html>
