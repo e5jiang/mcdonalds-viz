@@ -22,7 +22,9 @@ var column_burger = Highcharts.chart('column_burger', {
     legend: {
         enabled: false
     },
-
+    exporting: {
+        enabled: false
+    },
     plotOptions: {
         column: {
             pointPadding: 0.2,

@@ -22,7 +22,9 @@ var column_chicken = Highcharts.chart('column_chicken', {
     legend: {
         enabled: false
     },
-
+    exporting: {
+        enabled: false
+    },
     plotOptions: {
         column: {
             pointPadding: 0.2,

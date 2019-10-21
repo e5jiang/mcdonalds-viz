@@ -34,7 +34,9 @@ var chicken_line = Highcharts.chart('chicken_line', {
         }],
         tickInterval: 1000 * 3600 * 24 *30
     },
-
+    exporting: {
+        enabled: false
+    },
     series: [{
         name: 'XD'
     }]

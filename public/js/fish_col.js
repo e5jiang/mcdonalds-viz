@@ -22,7 +22,9 @@ var column_fish = Highcharts.chart('column_fish', {
     legend: {
         enabled: false
     },
-
+    exporting: {
+        enabled: false
+    },
     plotOptions: {
         column: {
             pointPadding: 0.2,

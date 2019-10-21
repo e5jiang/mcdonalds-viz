@@ -35,7 +35,9 @@ var burger_line = Highcharts.chart('burger_line', {
         }],
         tickInterval: 1000 * 3600 * 24 *30
     },
-
+    exporting: {
+        enabled: false
+    },
     series: [{
         name: 'XD'
     }]
