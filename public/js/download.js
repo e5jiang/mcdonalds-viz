@@ -52,7 +52,7 @@ Highcharts.getSVG = function(charts) {
   
     // Post to export server
     Highcharts.post(options.url, {
-      filename: options.filename || 'chart',
+      filename: options.filename || 'mcdonalds_charts',
       type: options.type,
       width: options.width,
       svg: Highcharts.getSVG(charts)
