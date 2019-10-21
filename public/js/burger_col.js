@@ -1,9 +1,12 @@
-Highcharts.chart('column_day', {
+Highcharts.chart('column_burger', {
     chart: {
         type: 'column'
     },
     title: {
-        text: 'Cumulative Hamburger Sales for Each Day of Week Jan 2016'
+        text: 'Cumulative Hamburger Sales',
+        style: {
+            "font-size": 16
+        }
     },
     
     data: {
@@ -12,13 +15,19 @@ Highcharts.chart('column_day', {
 
     yAxis: {
         title: {
-            text: 'Hamburger Sales'
+            text: 'Revenue (USD)'
         }
     },
+
+    legend: {
+        enabled: false
+    },
+
     plotOptions: {
         column: {
             pointPadding: 0.2,
-            borderWidth: 0
+            borderWidth: 0,
+            color: "#27251F"
         }
     },
 

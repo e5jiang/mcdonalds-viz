@@ -18,15 +18,21 @@ Highcharts.chart('burger_line', {
     },
     yAxis: {
         title: {
-            text: 'Hamburgers Sold'
+            text: 'Revenue (USD)'
         }
     },
     xAxis: {
+        
         type: 'datetime',
         labels: {
             format: '{value: %b-%y}',
             rotation: -20
         },
+        plotLines: [{
+            color: '#FF0000',
+            width: 2,
+            value: '1538377200000'
+        }],
         tickInterval: 1000 * 3600 * 24 *30
     },
 
