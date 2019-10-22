@@ -6,7 +6,7 @@ $(document).ready(function() {
                 var height = doc.internal.pageSize.getHeight();
                 var imgData = canvas.toDataURL('image/png');              
                 doc.addImage(imgData, 'PNG', 0, 0, width, height);
-                doc.save('sample-file.pdf');
+                doc.save('mcdonalds_report.pdf');
         });
     });
 })
