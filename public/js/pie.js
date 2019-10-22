@@ -1,15 +1,9 @@
-Highcharts.chart('container', {
+Highcharts.chart('pie_chart', {
     chart: {
-        plotBackgroundColor: null,
-        plotBorderWidth: null,
-        plotShadow: false,
         type: 'pie'
     },
     title: {
-        text: 'Browser market shares in January, 2018'
-    },
-    tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        text: '2016-2019 Revenue Breakdown'
     },
     plotOptions: {
         pie: {
@@ -21,44 +15,26 @@ Highcharts.chart('container', {
             }
         }
     },
-    data: {
-        csvURL: 'https://raw.githubusercontent.com/e5jiang/mcdonalds-viz/master/data_files/burgers_dow.csv'
-    },
     exporting: {
         enabled: false
     },
     series: [{
-        name: 'Brands',
-        colorByPoint: true,
-        data: [{
-            name: 'Chrome',
-            y: 61.41,
-            sliced: true,
-            selected: true
-        }, {
-            name: 'Internet Explorer',
-            y: 11.84
-        }, {
-            name: 'Firefox',
-            y: 10.85
-        }, {
-            name: 'Edge',
-            y: 4.67
-        }, {
-            name: 'Safari',
-            y: 4.18
-        }, {
-            name: 'Sogou Explorer',
-            y: 1.64
-        }, {
-            name: 'Opera',
-            y: 1.6
-        }, {
-            name: 'QQ',
-            y: 1.2
-        }, {
-            name: 'Other',
-            y: 2.61
+        name: "Revenue (USD)",
+        data: [
+        {
+            name: 'Hamburgers',
+            y: 317267030,
+            color:  '#27251F'
+        },
+        {
+            name: 'Chicken Fillets',
+            y: 132154618,
+            color: "#DA291C"
+        },
+        {
+            name: 'Fish Fillets',
+            y: 79426764,
+            color: "#FFC72C"
         }]
     }]
 });
